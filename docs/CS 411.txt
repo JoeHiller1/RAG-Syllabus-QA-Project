@@ -1,0 +1,214 @@
+Course Syllabus
+Links to an external sit
+I. Course Learning Goals
+Analyze real-world data management scenarios and design appropriate data schemas
+Formulate SQL queries to access a relational database system
+Design and develop data management applications using relational database systems 
+Analyze and apply data indexing techniques for speeding up query processing 
+Analyze and apply transaction processing techniques for executing transactions in relational database systems 
+Analyze and apply query optimization techniques for optimizing query execution
+Formulate MongoDB queries to access a document-oriented database system (MongoDB)
+Formulate Cypher queries to access a graph database system (Neo4j)
+2. Registration and other generic inquiries
+We will not be managing a waitlist for the course, and we have no control over registration.
+Registration will be on a first-come-first-serve basis. Usually, the CS Department staff will release more spots in-bulk every so often.
+
+3. Prerequisites
+Background: CS 225.
+Programming: For projects, you will do some significant application and web programming with some host languages of your choice (e.g., C, C++, Java, PHP, Python). We will not cover programming-specific issues in this course.
+4. Textbook
+Database Systems: The Complete Book, 2nd edition Links to an external site., by Hector Garcia-Molina, Jeffrey D. Ullman, and Jennifer D. Widom. See the book's home page Links to an external site. for errata, selected solutions, and other reference materials. The textbook will be used very significantly in the course. First two chapters: Chapter1.pdf Links to an external site., Chapter2.pdfLinks to an external site.
+Read the textbook for the required reading before lectures, and study them more carefully after class. Our lectures are intended to provide a roadmap for your reading-- with the limited lecture time, we may not be able to cover everything in the readings.
+
+5. Course Structure and Grading
+Grading Summary:
+Class component	Percent	Notes
+Attendance	5%	Coming to class to participate in Group Activities
+Group Work	15%	15% Completion (graded by effort, adjusted by participation)
+Homework	25%	6 MP/Written assignments
+Course Project	30%	Semester-long group project
+Quizzes	25%	Six Quizzes (5% each). No Final Exam.
+Extra Credits	-	Numerous extra credit opportunities
+Graduate students who work for 4 credits will be reweighed accordingly, with weights 0.90 for the items above and 0.10 for the literature survey
+
+Final grading (tentative):
+In this course, we will be assigning +/- letter grades.
+
+Total	Grade
+94-100	A
+90-93	A-
+87-89	B+
+84-86	B
+80-83	B-
+77-79	C+
+74-76	C
+70-73	C-
+67-69	D+
+64-66	D
+60-63	D-
+0-59	F
+We will be using the above grading scale. We will not be using a curve in this course. 
+This course may contain both graduate and advanced undergraduate students. We will grade all groups of students on different curves.
+
+Course Structure:
+A. Pre-lectures on Canvas
+Pre-lectures discuss the basic database concepts covered in this class.
+All prelectures will be posted on Canvas under the "Assignments" section.
+As you watch these lectures, please keep notes of any questions you may have. You will have a chance to ask questions during office hours and class meetings.
+Please note that we do not expect you to understand the concepts just by watching the video. Other course activities, such as but not limited to, group activities, TA recitations, and homework assignments, are designed to strengthen your understanding of the concepts discussed in the lecture videos.
+Please note that you are expected to watch the pre-lectures before the relevant in-class group activity.
+B. Attendance (5%)
+Attendance and participation are required. Attendance will not be counted if the course staff found that a student is not participating in group work or attending for a short period of time. Here are more details related to attendance. Please read carefully. 
+
+Students are expected to attend within the first 5 minutes of class and at least 45 minutes of class.
+Students should be working on the assigned group work during in-class group activity time. 
+We will drop attendance points for three classes without an excuse and provide some optional days throughout the semester. For example, if there are 25 required classes, you must attend 22 to receive full attendance points.
+You still need to do the group activity for the classes you missed. 
+You should not come to class if you think you might have COVID. A receipt of testing will waive you from in-person attendance. 
+To accommodate COVID situations, we will offer a Zoom version but will assume you are on-campus. Students are required to come to class in person and can only attend the class synchronously if they are not feeling well. Recordings will also be available after lecture time via canvas.
+
+C. Group Work (15%)
+Completing group work is required. Group work starts during class time using Prairielearn and is due the following Friday. No late submissions are allowed. Group works are meant to provide you with practices associated with the pre-lectures. It helps you understand the concepts more thoroughly and identify any misconceptions about the pre-lectures. Group work will start after Q&A sessions. The course staff will be in the classroom and online throughout this period to help you. 
+
+Working on group work will provide you with hands-on learning that will allow you to understand the concepts more thoroughly. The discussions will help you learn the material by working on activities, interacting with your classmates, and asking instructor/TA/CA questions. Please note the following:
+
+Group work must be done in groups. We will randomly assign students to form groups in the first few weeks. Each group should consist of 4 students. After Project Track 1 teams are assigned, you will complete your group work with your project track 1 teammates. We do not restrict the use of any communication tools (i.e. Discord, Zoom, Messenger… etc), during or outside of class to complete the group work, as long as you are working within the group. Collaboration across groups is considered a violation of the course's academic integrity policies.
+Group works are graded by effort. 
+Three and four-credit students are allowed to team up together.
+Each team will receive one instance of the group work, and all team members will share the same grade on that instance of the assessment by default. If you have issues with the group dynamic, i.e., unfair workload distribution, you will have a chance to evaluate your teammates participation. But if you need immediate help with a team situation, please reach out to your project TA ASAP.
+Group work still follows academic honesty guidelines. Your group should not exchange and discuss answers with other groups. All rules listed in Section VII-A-(3)~(5) of this syllabus apply to group-based assignments.
+There are three team roles: manager, recorder, and reflector. You are expected to participate in each of these roles at least once this semester, and teams are encouraged to rotate these roles each week. Students that were not assigned to any of the three roles would be a contributor to the team. Missing one of the following three roles throughout the entire semester will result in 0 in your group work:
+Manager: Responsible for coordinating the team's efforts and making sure that all team members are contributing. For example, if a team member is silent for a while, the manager's role is to check in on the team member. The manager is responsible for indicating who took on each role at the end of group work. 
+Recorder: The recorder is responsible for being the main "driver," entering answers into PrairieLearn. For example, we encourage the recorder to have PrairieLearn open and share their screen with other team members. The recorder is also responsible for completing the extra credit debrief the exercise.
+Reflector: The reflector is responsible for ensuring that all team members understand what's going on. For example, the reflector might ask whether each team member understands the problem before moving on to the next problem. The reflector is responsible for completing a short survey at the end of each group work, which includes some questions about how the team performed as a group and how we might try to improve each group work.
+Contributor: The contributor is a member with no team organization duties but is expected to contribute to the teamwork. Teammates will also provide peer reviews periodically during the semester.
+D. Homework (25%)
+In this course, assignments are composed of MPs, auto-graded coding questions, hand-written questions, and short answer questions.
+There will be six written/MP assignments spaced out over the semester. 
+
+Assignments are individual work.
+Collaboration is NOT allowed when working on assignments.
+Discussions are allowed if and only if these discussions regard only high-level concepts and general ideas. Discussion cannot involve answers to the questions on the homework. Checking answers/part of the solutions among peers are not allowed. Sharing answers on any public/private electronic platform, including but not limited to email, messenger, Facebook groups, discord chat, etc., are not allowed. 
+If you discussed questions with your classmates, you must include their names and the questions you discussed. Not including students' names will be considered a violation of the course's academic integrity policy. This rule applies to all individual homework assignments, including MPs.
+You should reference (in your code as comments) any code or concepts copied from StackOverflow or any other online resources. However, 80% of the code you turn in must be your own code.
+You are allowed to submit regrade requests within the time frame listed on Campuswire.
+Uploading your assignment questions to public platforms (i.e., shared drive, course hero, etc.) is prohibited. This includes uploading full or partial solutions on Campuswire. Such violations are copyright infringements and possible violations of academic honesty. We will process these strictly.
+The teaching staff will check for code similarity. Plagiarism is handled and processed strictly.
+E. Quizzes (25%)
+There are a total of SIX quizzes (5 quizzes will be proctored by the CBTF and one in-class quiz).  There will not be a final exam. We will post practice exams on Prairielearn before exams. You should not assume that practice exams reflect the actual exam; however, they cover similar concepts that you should be familiar with.
+
+This course uses the College of Engineering Computer-Based Testing Facility (CBTF) for quizzes.
+
+Please make sure you can attend all the exams as scheduled. MARK YOUR EXAMS ON THE CALENDAR AFTER YOU SCHEDULE THEM.
+Last-minute make-up exams for CBTF (i.e., overslept, forgot the time, misremember time, etc.) will result in a 30% reduction of your rescheduled exam grade if the exam was scheduled after the exam period (see course schedule for posted exam periods.)
+We adhere to the same policies and academic integrity infractions as CBTF.
+Please refer to Section VII-D or Section VIII of this syllabus for Disability Resources and Educational Services (DRES) and other accommodations. These requests should be reiterated to the teaching staff 72 hours before EVERY exam that requires specific accommodation.
+If you have any issues during the test, please inform the proctor immediately. Work with the proctor to resolve the issue before logging off. If the proctor couldn't resolve the issue, you should then create an issue on Prairielearn, and course staff will respond right after the exam period is over. 
+If you have any emergencies, i.e., testing positive within 12 hours of your exam, or experiencing family emergencies 1 hour prior to your exam, you should inform the teaching staff 24 hours before the event for the staff to provide necessary accommodations.
+Course instructor holds the right to decide whether or not to apply the exam drop policy. If this policy is applied, 30% of the course grade will be based on the best 5 quizzes. 
+F. Project (30%)
+There will be a semester-long project, which involves significant database application programming. The project will be structured with several milestones due in the semester, leading to a demo and write-up near the end of the semester. Details and policies for the project will be documented separately. Please note that projects are group-based assignments, and they still follow academic honesty guidelines. Your group should not exchange and discuss code with other groups. Please cite them accordingly if you sourced code from external sources or TA's code. All rules listed in Section VII-C- (3)~(5) of this syllabus apply to project assignments.
+
+The 4th-credit project (an option for Graduate Students)
+Graduate students MAY take this course for 4 credit units. (Undergraduates take this course for three credit hours but in some special circumstances may take the course for 4 credits.)
+For the extra unit, you will complete an additional project (a literature review). Please note that 4 credit students will be assigned two projects (Project track 1 and 2).
+
+G. Extra Credit
+Discussion on Campuswire (up to 1 point of the entire course grade)
+This semester, we will be using Campuswire for office hours, announcements, and discussions. Campuswire is the home base for all of our class communication -- you can use Campuswire to ask questions about concepts and assignments, and the course staff will post announcements there. The top 15% of students who receive reputation points above the class average for Campuswire participation will receive 1 point of the entire course grade. These reputation points come from instructor-endorsed (upvoted), correct, and concise answers.
+
+Homework Assignments, Project, and Pre-lectures:
+We will have several opportunities for extra credit in homework assignments and the course project. Extra credits are added to the original assignment unless otherwise expressed.
+
+6. General Course Guidelines
+A. Academic Integrity, Plagiarism, and Copyright
+Please remember that the University honor code binds students to academic integrity regarding all work related to this course. Any student violating this code will be subject to disciplinary action. We have seen instances of this in the past via automated detection software, so don't think we won't be able to catch you. We will follow Articles 1-401 through 1-406 of the student conduct (link to https://studentcode.illinois.edu/article1/part4/1-401/). This rule defines infractions of academic integrity, which include but are not limited to cheating, fabrication, and plagiarism. You are responsible for following these guidelines. If you have any questions about whether something would be an infraction, consult the instructor before proceeding. 
+
+In very rare circumstances, instructors and teaching staff may allow a single-time warning before filing a violation of academic integrity in writing to the University. The remedy of such infringement and filing is summarized here.
+
+Recording material from this course, including lectures, discussions, or other activities, is forbidden. Sharing recorded material or posting it online is also prohibited. Sharing questions, assignments, and/or answer keys to these contents is also forbidden. These contents are considered copyright materials associated with the original authors; hence, reposting these contents is a violation of law and therefore a violation of the Student Code of Conduct and can be met with campus sanction. Any violation of these policies will be forwarded to the Office of Student Conflict Resolution for disciplinary action. More information can be found here Links to an external site..
+
+B. Deadlines
+All scheduled times are time and dates in IOC time (US Central Time). These deadlines are strictly enforced. If this deadline pertains to assignment submission, you will get zero credit. No accommodations would be made if this deadline relates to a request or a survey. Please refer to Section VII- D for arrangements if you cannot complete an assignment/submission due to illness or a family emergency. All accommodations, by default, require at least 24 hours before the deadline of that event.
+
+C. Communication 
+Questions/comments/concerns to course staff (including the instructor)
+Send a private note (to instructors) on Campuswire. 
+
+Please don't email the instructor or TAs nor send direct messages on Campuswire. The best way to reach the teaching staff is by posting a private note to instructors. Instructors and TAs may not be able to respond to emails and direct messages. Timestamps of these direct messages and emails will not be viewed as valid submissions unless otherwise granted.
+
+Looking for Help
+Should you have any questions or need clarification of class material, what should you do?
+
+Try to discuss with your project group- peers. You can get immediate help and learn to communicate "professionally" with your peers. You will know the material better by discussing it and explaining it to your peers. Remember, this pertains only to discussing class materials and course content, not assignment answers.
+If you do not get satisfactory answers, try checking the textbook; usually, the book provides detailed descriptions and references to help you out.
+Post your question to Campuswire. Note that Campuswire is for you and your peers to discuss class-related materials and help one another. The TAs will monitor the forum and try their best to help. But please be aware that the TAs may not answer all questions on the forum promptly due to the sometimes overwhelming number of questions. Also, some things are not appropriate for the forum, such as solutions for assignments and activities. DO NOT POST YOUR SOLUTION PUBLICLY, including partial solutions. Posting publicly on the forum to peers will be viewed as a violation of academic honesty and will apply rules listed in Section VII-(A)
+For a more thorough discussion, attend our office hours if you can! The TAs and the instructor will have office hours for most weekdays. Don't be shy. Use our office hours to their fullest extent to help your study.
+For questions/comments/concerns to course staff (including the instructor), please post a private note (to instructors) on Campuswire. 
+Any announcements will be posted on Campuswire. Make sure to check Campuswire frequently enough to stay informed. Pinned posts from course staff and instructors are viewed as official announcements supplementing the course syllabus.
+D. Other Accommodations 
+1. Sickness (Sick Policy)
+
+This policy applies to illness or injury for less than 3 days. When you are not feeling well, please notify through a private post on Campuswire that you might need an extension for an assignment, exam, group work, or pre-lectures as far in advance as possible. You will need to provide documentation for the reason for your absence within 3 days of the deadline. Exams follow the same procedure, and the make-up exams will be scheduled by teaching staff. For illness or injury of more than 3 days, please follow the policy in Section VII - D - 3 of this syllabus. For covid-related policy, please refer to Section VII - D - 4.
+
+2. Interviews and paper conference presentations (Interview/Conference Policy) 
+
+If you know you will be out of town for a given discussion section, you must first inform the teaching staff via a private post on Campuswire of your absence with documented proof. This needs to be done 5 days prior to the assignment, exam, group work, pre-lecture deadline, or as soon as you receive the event invitation, whichever is earlier. A reasonable extension might be given.
+
+Online/remote interviews and conferences do not apply.
+
+3. Family emergencies or other emergencies (Absence Letter Policy) 
+
+Suppose you have an unexpected need to miss an assignment such as an illness or family emergency. In that case, you must send a private post on Campuswire from the emergency dean verifying the issue. Absence Letters can be granted from here. They follow the criteria outlined in the  Class Attendance Policy in the Student Code of Conduct, such as but not limited to prolonged illness or injury of 3 days or more. You will then be given a 1-week maximum extension (or whatever is listed in the student handbook) to complete your work.
+
+4. COVID Related Policy
+
+If you feel under the weather due to vaccination, you must first inform at least one TAs via campuswire of your absence with documented proof. You will be granted at most 1 day of extension.
+If you feel ill due to an unfortunate infection, you should inform at least one TAs via campuswire with documented proof. You will be granted at most 3 days of extension for assignments, group activities, prelectures; You will be granted a remote exam; or a waiver on attendance.
+If you are experiencing any other impact because of COVID, please communicate with at least one TA and the teaching team. The impacts include but are not limited to a roommate, family member, or one's significant other hospitalized due to COVID. The teaching staff will try to make a reasonable accommodation case-by-case.
+5. All other accommodations
+
+For accommodations outside of this syllabus, we follow guidelines from the Student Code, mostly listed in Article 1 Part 5 (linked to https://studentcode.illinois.edu/article1/part5/1-501/). For any clarifications, you should post a private note to the teaching staff on Campuswire 72 hours or as early or possible PRIOR to the event of the deadline, including exams. The course staff will not accept any accommodations not listed above after the deadline.
+
+7. All Other Accommodations
+Please talk to the instructor or TA if you have any other needs outside of this list. However, be mindful that this is a course with more than 300 students, and we may not accommodate all requests. 
+
+A. Disabilities
+To obtain disability-related academic adjustments and/or auxiliary aids, students with disabilities must contact the course instructor and the Disability Resources and Educational Services (DRES) as soon as possible. To contact DRES, you may visit 1207 S. Oak St., Champaign, call 333-4603, email disability@illinois.edu or go to the DRES website.
+
+For instructions on how to handle accommodations with the computer-based testing facility, please see https://cbtf.engr.illinois.edu/#dres
+
+Please also schedule a private meeting with the course professor to discuss your needs and requirements. We will try to accommodate all requirements once you self-identify. Please note accommodations are not retroactive to the beginning of the semester but begin the day you contact your professor with a current letter of accommodation from DRES. You should supply your request for each accommodation required on exams, assignments on a need basis. A letter does not mean an automatic accommodation to all assignments and exams. All requests follow a 72-hour notice policy.
+
+B. Mental Health
+As a course staff, we are concerned about advancing our students' mental health and well-being. Diminished mental health, including significant stress, mood changes, excessive worry, substance/alcohol abuse, or problems with eating and/or sleeping, can interfere with optimal academic performance, social development, and emotional well-being. The University of Illinois offers various confidential services, including individual and group counseling, crisis intervention, psychiatric services, and specialized screenings at no additional cost. If you or someone you know experiences any of the above mental health concerns, it is strongly encouraged to contact or visit any of the University's resources provided below. Getting help is a smart and courageous thing to do – for yourself and for those who care about you. Also, let's look out for each other and help others get the help that they need!
+
+Counseling Center: 217-333-3704, 610 East John Street Champaign, IL 61820
+McKinley Health Center:217-333-2700, 1109 South Lincoln Avenue, Urbana, Illinois 61801
+
+C. Religious Observances
+Illinois law requires the University to reasonably accommodate its students' religious beliefs, observances, and practices in regard to admissions, class attendance, and the scheduling of examinations and work requirements. You should examine this syllabus at the beginning of the semester for potential conflicts between course deadlines and any of your religious observances. If a conflict exists, you should notify your instructor of the conflict and follow the procedure at https://odos.illinois.edu/community-of-care/resources/students/religious-observances/ to request appropriate accommodations. This should be done in the first two weeks of classes.
+
+D. Statement on Racism and Inclusion
+The intent is to raise student and instructor awareness of the ongoing threat of bias and racism and of the need to take personal responsibility in creating an inclusive learning environment.
+
+The Grainger College of Engineering is committed to the creation of an anti-racist, inclusive community that welcomes diversity along with a number of dimensions, including, but not limited to, race, ethnicity and national origins, gender, and gender identity, sexuality, disability status, class, age, or religious beliefs. The College recognizes that we are learning together in the midst of the Black Lives Matter movement that Black, Hispanic, and Indigenous voices and contributions have largely either been excluded from, or not recognized in, science and engineering, and that both overt racism and micro-aggressions threaten the well-being of our students and our university community.
+
+The effectiveness of this course is dependent upon each of us to create a safe and encouraging learning environment that allows for the open exchange of ideas while also ensuring equitable opportunities and respect for all of us. Everyone is expected to help establish and maintain an environment where students, staff, and faculty can contribute without fear of personal ridicule or intolerant or offensive language. If you witness or experience racism, discrimination, micro-aggressions, or other offensive behavior, you are encouraged to bring this to the attention of the course director if you feel comfortable. You can also report these behaviors to the Bias Assessment and Response Team (BART) https://bart.illinois.edu/. Based on your report, BART members will follow up and reach out to students to make sure they have the support they need to be healthy and safe. If the reported behavior also violates university policy, staff in the Office for Student Conflict Resolution may respond as well and will take appropriate action.
+
+E. Sexual Misconduct Reporting Obligation
+The University of Illinois is committed to combating sexual misconduct. Faculty and staff members are required to report any instances of sexual misconduct to the University's Title IX Office. In turn, an individual with the Title IX Office will provide information about rights and options, including accommodations, support services, the campus disciplinary process, and law enforcement options.
+
+A list of the designated University employees who, as counselors, confidential advisors, and medical professionals, do not have this reporting responsibility and can maintain confidentiality can be found here: wecare.illinois.edu/resources/students/#confidential Links to an external site..
+
+Other information about resources and reporting is available here: wecare.illinois.edu Links to an external site..
+
+F. Family Educational Rights and Privacy Act (FERPA)
+Any student who has suppressed their directory information pursuant to Family Educational Rights and Privacy Act (FERPA) should self-identify to the instructor to ensure the protection of the privacy of their attendance in this course. See https://registrar.illinois.edu/academic-records/ferpa/ for more information on FERPA.
+
+G. COVID-Related
+We adhere to all COVID-related university policies to protect the health and safety of our community. Students and staff are also required to follow the campus COVID-19 protocols. Students who feel ill must not come to class. In addition, students who test positive for COVID-19 or have had an exposure that requires testing and/or quarantine must not attend class. The University will provide information to the instructor, in a manner that complies with privacy laws, about students in these latter categories. These students are judged to have excused absences for the class period and should contact the instructor via email about making up the work. More details are listed in Section VII-4. Students who fail to abide by these rules will first be asked to comply; if they refuse, they will be required to leave the classroom immediately. If a student is asked to leave the classroom, the non-compliant student will be judged to have an unexcused absence and reported to the Office for Student Conflict Resolution for disciplinary action. Accumulation of non-compliance complaints against a student may result in dismissal from the University.
+
+Please refer to the University of Illinois Urbana-Champaign's COVID-19 website for further information on face coverings. Thank you for respecting all of our well-being to learn and interact together productively.
+
+ 
