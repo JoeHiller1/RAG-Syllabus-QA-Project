@@ -354,6 +354,81 @@ def generate_answer_stub(query: str, contexts: List[Dict]) -> str:
 
 
 # -----------------------------
+# Streamlit App Functions
+# -----------------------------
+def load_or_build_index(
+    docs_dir: str,
+    chunk_size: int = 800,
+    chunk_overlap: int = 150,
+    encoding_name: str = "cl100k_base",
+    model_name: str = "all-MiniLM-L6-v2"
+) -> Tuple[faiss.Index, List[Chunk], SentenceTransformer]:
+    """
+    Load documents, chunk them, embed, and build FAISS index.
+    Returns: (index, chunks, model)
+    """
+    # 1) Load docs
+    docs = load_documents(docs_dir)
+    if not docs:
+        raise RuntimeError(f"No supported docs found in {docs_dir}. Use .txt/.md/.pdf")
+    
+    # 2) Clean syllabus text
+    docs = [(doc_id, path, clean_syllabus_text(text)) for doc_id, path, text in docs]
+    
+    # 3) Chunk
+    all_chunks: List[Chunk] = []
+    for doc_id, path, text in docs:
+        all_chunks.extend(
+            chunk_text(
+                text=text,
+                doc_id=doc_id,
+                source_path=path,
+                chunk_size=chunk_size,
+                chunk_overlap=chunk_overlap,
+                encoding_name=encoding_name,
+            )
+        )
+    
+    if not all_chunks:
+        raise RuntimeError("No chunks created—are your documents empty?")
+    
+    # 4) Embed + index
+    # Force CPU usage explicitly
+    model = SentenceTransformer(model_name, device='cpu')
+    
+    embeddings = embed_texts(model, [c.text for c in all_chunks])
+    index = build_faiss_index(embeddings)
+    
+    return index, all_chunks, model
+
+def answer_query(
+    query: str,
+    index: faiss.Index,
+    chunks: List[Chunk],
+    model: SentenceTransformer,
+    top_k: int = 5
+) -> Tuple[str, List[Dict]]:
+    """
+    Answer a query using the index and chunks.
+    Returns: (answer, retrieved_chunks)
+    """
+    # Extract course from query and filter chunks if course is mentioned
+    course_code = extract_course_from_query(query)
+    if course_code:
+        filtered_chunks = [ch for ch in chunks if course_matches_doc(course_code, ch.doc_id)]
+        if filtered_chunks:
+            chunks = filtered_chunks
+    
+    # Retrieve
+    result = retrieve(model, index, chunks, query, top_k=top_k)
+    
+    # Generate answer
+    answer = generate_answer_stub(query, result.retrieved)
+    
+    return answer, result.retrieved
+
+
+# -----------------------------
 # Logging / Analytics
 # -----------------------------
 def log_retrieval_to_csv(result: RetrievalResult, out_csv: str = "retrieval_logs.csv") -> None:
