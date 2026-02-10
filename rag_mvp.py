@@ -293,6 +293,12 @@ def retrieve(
     query: str,
     top_k: int = 5
 ) -> RetrievalResult:
+    # Index must have been built from this exact chunks list
+    if index.ntotal != len(chunks):
+        raise ValueError(
+            f"Index and chunks length mismatch: index has {index.ntotal} vectors, "
+            f"chunks has {len(chunks)} items. Use the same index and chunks from load_or_build_index."
+        )
     timings = {}
 
     t0 = time.perf_counter()
@@ -303,9 +309,10 @@ def retrieve(
     scores, ids = index.search(q_emb, top_k)
     timings["faiss_search"] = (time.perf_counter() - t1) * 1000
 
+    n_chunks = len(chunks)
     retrieved = []
     for rank, (idx, score) in enumerate(zip(ids[0].tolist(), scores[0].tolist()), start=1):
-        if idx < 0:
+        if idx < 0 or idx >= n_chunks:
             continue
         ch = chunks[idx]
         retrieved.append({
