@@ -326,10 +326,6 @@ def retrieve(
 # Generation (Stub)
 # -----------------------------
 def generate_answer_stub(query: str, contexts: List[Dict]) -> str:
-    """
-    Replace this later with your LLM call (OpenAI/Claude/local).
-    For MVP, this is a "grounded summary" baseline.
-    """
     if not contexts:
         return "I couldn't find relevant context in the documents."
 
@@ -412,19 +408,26 @@ def answer_query(
     Answer a query using the index and chunks.
     Returns: (answer, retrieved_chunks)
     """
-    # Extract course from query and filter chunks if course is mentioned
+    # Retrieve always uses the full chunks list so FAISS indices are valid.
     course_code = extract_course_from_query(query)
     if course_code:
-        filtered_chunks = [ch for ch in chunks if course_matches_doc(course_code, ch.doc_id)]
-        if filtered_chunks:
-            chunks = filtered_chunks
-    
-    # Retrieve
-    result = retrieve(model, index, chunks, query, top_k=top_k)
-    
+        # Ask for more candidates so we can filter by course and still return top_k
+        search_k = min(top_k * 10, len(chunks))
+        result = retrieve(model, index, chunks, query, top_k=search_k)
+        # Keep only chunks that match the course, then take top_k
+        filtered = [
+            r for r in result.retrieved
+            if course_matches_doc(course_code, r["doc_id"])
+        ][:top_k]
+        for i, r in enumerate(filtered, start=1):
+            r["rank"] = i
+        result.retrieved = filtered
+    else:
+        result = retrieve(model, index, chunks, query, top_k=top_k)
+
     # Generate answer
     answer = generate_answer_stub(query, result.retrieved)
-    
+
     return answer, result.retrieved
 
 

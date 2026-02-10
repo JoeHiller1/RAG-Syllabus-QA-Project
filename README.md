@@ -6,4 +6,4 @@ pip install -r requirements.txt
 python app/rag_mvp.py --docs ./docs --query "How many quizzes are dropped?" --top_k 5
 
 ### Demo
-Streamlit: <link>
+Streamlit: https://rag-syllabus-app-project-2ytxlw6qqyaazs3sv9ymsz.streamlit.app/ 

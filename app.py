@@ -2,13 +2,13 @@ import os
 import streamlit as st
 from rag_mvp import load_or_build_index, answer_query
 
-st.set_page_config(page_title="Syllabus RAG MVP", layout="wide")
+st.set_page_config(page_title="Syllabus RAG", layout="wide")
 
-st.title("Syllabus RAG MVP")
+st.title("Syllabus RAG")
 st.caption("Ask questions about course syllabi. Answers are grounded in retrieved chunks.")
 
 docs_dir = st.text_input("Docs folder (in repo)", value="docs")
-query = st.text_input("Question", value="What is covered in week 5?")
+query = st.text_input("Question", value="")
 top_k = st.slider("top_k", 1, 10, 5)
 
 if st.button("Run"):
